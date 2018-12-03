@@ -9,9 +9,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Route exact path="/" component={Categories} />
+        <Route exact path={"/"} component={Categories} />
         <Route path={"/categories/:id/page=:page"} component={Articles} />
-        <Route path="/article/:id" component={Article} />
+        <Route path={"/article/:id"} component={Article} />
       </div>
     );
   }
